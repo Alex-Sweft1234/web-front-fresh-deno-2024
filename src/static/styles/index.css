@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    color: #FFFFFF;
+    min-height: 100vh;
+    background: #25435D;
+}
+
+img {
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+a {
+    transition: all 0.2s ease-out!important;
+    -webkit-tap-highlight-color: transparent!important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #EE403D;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+    background: #EE403D;
+    border-radius: 20px;
+}
+
+.grecaptcha-badge {
+    display: none !important;
+    z-index: 100000;
+}
+
+.pjAcceptCookieBarBtn {
+    font-weight: 700;
+    color: #FFFFFF!important;
+    background: #EE403D!important;
+    border-radius: 70px!important;
+}
+
+.pjAcceptCookieBarBtn:after {
+    border-bottom-color: #EE403D!important;
+    background: #EE403D!important;
+    border-radius: 70px!important;
+}
+
+#pjAcceptCookieBar {
+    background: #25435D!important;
+}
+
+.pjAcceptCookieBarBtn:hover {
+    border-radius: 70px!important;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.layout-header {
+    z-index: 100;
+}
+
+.layout-main {
+    z-index: 99;
+    flex: 1 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding-top: 120px;
+    min-height: calc(100vh - 310px);
+}
+
+.layout-footer {
+    z-index: 100;
+    flex-shrink: 0;
+}
