@@ -4,7 +4,6 @@ import { getConstants } from "../shared/api/mod.ts"
 import { PageContainer } from "../islands/page.container.tsx"
 import { TConstants, TGlobalState, TSuccessResponse } from "../types/mod.ts"
 
-
 export const handler: Handlers = {
   async GET(_req: Request, ctx: FreshContext<any>) {
     await getConstants().then(({ data }: TSuccessResponse<TConstants>) => {

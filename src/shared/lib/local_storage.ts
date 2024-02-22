@@ -1,6 +1,5 @@
 import { ILocaleStorage } from "./../../types/mod.ts"
 
-
 export const ls: ILocaleStorage = {
   get: (key) => {
     const value = localStorage.getItem(key)
