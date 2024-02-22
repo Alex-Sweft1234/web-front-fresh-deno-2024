@@ -11,7 +11,7 @@ type TPageContainer = {
 export function PageContainer({ children, state }: TPageContainer) {
   const { constants: { setData } } = useStore()
 
-  useLayoutEffect(() => setData(state.constants), [state])
+  useLayoutEffect(() => setData(state.constants), [])
 
   return <>{children}</>
 }
