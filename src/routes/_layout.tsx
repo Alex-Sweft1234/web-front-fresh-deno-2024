@@ -3,7 +3,7 @@ import { HeaderRoot, Footer } from "../widgets/mod.ts"
 
 export default function Layout({ Component }: PageProps) {
   return (
-    <div className="layout">
+    <div className="layout bg-blue">
       <div className="layout-header">
         <HeaderRoot />
       </div>

@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-    color: #FFFFFF;
-    min-height: 100vh;
-    background: #25435D;
-}
-
 img {
     display: block;
     user-select: none;
