@@ -10,6 +10,7 @@ import * as $index from "./routes/index.tsx";
 import * as $profile_index from "./routes/profile/index.tsx";
 import * as $start_layout from "./routes/start/_layout.tsx";
 import * as $start_index from "./routes/start/index.tsx";
+import * as $alert from "./islands/alert.tsx";
 import * as $island from "./islands/island.tsx";
 import * as $page_container from "./islands/page.container.tsx";
 import * as $store_provider from "./islands/store.provider.tsx";
@@ -27,6 +28,7 @@ const manifest = {
     "./routes/start/index.tsx": $start_index,
   },
   islands: {
+    "./islands/alert.tsx": $alert,
     "./islands/island.tsx": $island,
     "./islands/page.container.tsx": $page_container,
     "./islands/store.provider.tsx": $store_provider,

@@ -2,6 +2,7 @@ import { ComponentChildren } from "preact"
 import { useLayoutEffect } from "preact/hooks"
 import { TGlobalState } from "../types/mod.ts"
 import { useStore } from "./store.provider.tsx"
+import {Alert} from "./alert.tsx";
 
 type TPageContainer = {
   state: TGlobalState
@@ -13,5 +14,10 @@ export function PageContainer({ children, state }: TPageContainer) {
 
   useLayoutEffect(() => setDataConstants(state.constants), [])
 
-  return <>{children}</>
+  return (
+    <>
+      <Alert />
+      {children}
+    </>
+  )
 }

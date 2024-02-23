@@ -28,6 +28,7 @@ export default function App({ Component }: PageProps) {
           <Component/>
         </StoreProvider>
         <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+        <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/dialog.js"></script>
       </body>
     </html>
   )
