@@ -1,5 +1,5 @@
 import { PageProps } from "$fresh/server.ts"
-import { HeaderRoot, Footer } from "../slices/widgets/mod.ts"
+import { HeaderRoot, Footer } from "../layers/widgets/mod.ts"
 
 export default function Layout({ Component }: PageProps) {
   return (

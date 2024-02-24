@@ -1,6 +1,6 @@
 import { ComponentChildren } from "preact"
 import { useLayoutEffect } from "preact/hooks"
-import { TGlobalState } from "../slices/types/mod.ts"
+import { TGlobalState } from "../layers/types/mod.ts"
 import { useStore } from "./store.provider.tsx"
 import {Alert} from "./alert.tsx";
 

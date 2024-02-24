@@ -1,6 +1,6 @@
 import { FreshContext, Handlers } from "$fresh/src/server/types.ts"
-import { getConstants } from "../../slices/shared/api/mod.ts"
-import { TSuccessResponse, TConstants } from "../../slices/types/mod.ts"
+import { getConstants } from "../../layers/shared/api/mod.ts"
+import { TSuccessResponse, TConstants } from "../../layers/types/mod.ts"
 
 export const handler: Handlers = {
   async GET(_req: Request, ctx: FreshContext<any>) {

@@ -1,8 +1,8 @@
 import { createContext, ComponentChildren } from "preact"
 import { useMemo, useContext } from "preact/hooks"
 import { useSignal } from "@preact/signals"
-import { IGlobalContext, TConstants, TSuccessResponse } from "../slices/types/mod.ts"
-import { getConstants } from "../slices/shared/api/mod.ts"
+import { IGlobalContext, TConstants, TSuccessResponse } from "../layers/types/mod.ts"
+import { getConstants } from "../layers/shared/api/mod.ts"
 
 export const AppStore = createContext<IGlobalContext>({
   constants: { data: null, loading: false, setData: () => {} } })

@@ -1,6 +1,6 @@
 import moment from "moment"
 import { useStore } from "./store.provider.tsx"
-import { Button, NavLink } from "../slices/shared/ui/mod.ts"
+import { Button, NavLink } from "../layers/shared/ui/mod.ts"
 
 export default function Island({ path = '' }) {
   const { constants: { data, loading: isLoadConstants, setData: uploadConstants } } = useStore()
