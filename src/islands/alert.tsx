@@ -1,5 +1,5 @@
 import { useState } from "preact/hooks"
-import { Modal } from "../shared/ui/mod.ts"
+import { Modal } from "../slices/shared/ui/mod.ts"
 
 export function Alert() {
   const [alert, setAlert] = useState<boolean>(true)

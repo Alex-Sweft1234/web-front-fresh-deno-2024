@@ -1,5 +1,5 @@
 import { PageProps } from "$fresh/server.ts"
-import { metaData } from "../shared/config/mod.ts"
+import { metaData } from "../slices/shared/config/mod.ts"
 import { StoreProvider } from "../islands/store.provider.tsx"
 
 export default function App({ Component }: PageProps) {

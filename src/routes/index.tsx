@@ -1,8 +1,8 @@
 import { FreshContext, Handlers, PageProps } from "$fresh/server.ts"
-import { HomePage } from "../pages/mod.ts"
-import { getConstants } from "../shared/api/mod.ts"
+import { HomePage } from "../slices/pages/mod.ts"
+import { getConstants } from "../slices/shared/api/mod.ts"
 import { PageContainer } from "../islands/page.container.tsx"
-import { TConstants, TGlobalState, TSuccessResponse } from "../types/mod.ts"
+import { TConstants, TGlobalState, TSuccessResponse } from "../slices/types/mod.ts"
 
 export const handler: Handlers = {
   async GET(_req: Request, ctx: FreshContext<any>) {

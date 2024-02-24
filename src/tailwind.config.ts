@@ -2,7 +2,7 @@ import { type Config } from "tailwindcss"
 
 export default {
   content: [
-    "{routes,islands,shared,pages,widgets}/**/*.{ts,tsx}",
+    "{routes,islands,slices}/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
