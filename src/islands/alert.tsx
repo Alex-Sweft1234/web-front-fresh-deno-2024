@@ -4,9 +4,8 @@ import { useAction, useSelector } from "./store.provider.tsx"
 import { str } from "../layers/shared/lib/mod.ts"
 
 export function Alert() {
-  const { modals: { data: { alert } } } = useSelector()
-
   const { modals: { setAlert } } = useAction()
+  const { modals: { data: { alert } } } = useSelector()
 
   const { title = "Информация", message, actionText = "Хорошо", closeButton = false } = alert || {}
 
