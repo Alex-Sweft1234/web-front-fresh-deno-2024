@@ -7,7 +7,7 @@ export function IconButton({ children, disabled, ...props }: JSX.HTMLAttributes<
       {...props}
       data-ripple-light="true"
       disabled={disabled || !IS_BROWSER}
-      className="relative align-middle select-none transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none active:opacity-[0.85] rounded-full"
+      className="relative align-middle select-none transition-all p-1.5 disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none active:opacity-[0.85] hover:bg-[#25435d1a] rounded-full"
     >
       {children}
     </button>

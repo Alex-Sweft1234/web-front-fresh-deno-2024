@@ -47,12 +47,12 @@ export function Modal({
       id="backdrop"
       data-dialog-backdrop="dialog"
       data-dialog-backdrop-close="false"
-      className="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-250"
+      className="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-280"
     >
       <div
         id="dialog"
         data-dialog="dialog"
-        className="relative p-6 m-4 w-full min-w-[320px] max-w-[600px] rounded-lg bg-white leading-relaxed antialiased shadow-2xl transition-all duration-250 -translate-y-14"
+        className="relative p-6 m-4 w-full min-w-[320px] max-w-[600px] rounded-3xl bg-white leading-relaxed antialiased shadow-2xl transition-all duration-280 -translate-y-14"
       >
         {closeButton && (
           <div className="absolute top-3 right-3">
@@ -62,8 +62,8 @@ export function Modal({
           </div>
         )}
 
-        <div className="text-center p-4 text-blue text-3xl font-bold">{title}</div>
-        <div className="text-center py-4 text-blue text-xl font-regular">{children}</div>
+        <div className="text-center font-bold uppercase p-4 text-blue text-3xl font-bold">{title}</div>
+        <div className="text-center py-4 text-blue text-md font-regular">{children}</div>
       </div>
     </div>
   )

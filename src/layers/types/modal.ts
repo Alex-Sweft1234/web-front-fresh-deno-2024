@@ -1,6 +1,7 @@
 export type TAlert = {
   title?: string
   actionText?: string
+  closeButton?: boolean
   message: Record<string, string[] | string>
 }
 

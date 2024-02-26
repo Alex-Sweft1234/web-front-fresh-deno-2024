@@ -32,7 +32,7 @@
     "$std/": "https://deno.land/std@0.211.0/",
     "moment": "https://deno.land/x/momentjs@2.29.1-deno/mod.ts",
     "hook-form": "https://deno.land/x/netzo@0.4.56/deps/react-hook-form.ts",
-    "html-parser": "https://deno.land/x/deno_dom/deno-dom-wasm.ts"
+    "html-parser": "https://deno.land/x/deno_dom@v0.1.45/deno-dom-wasm.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsx",

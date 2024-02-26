@@ -13,9 +13,9 @@ export default {
         xl: "1920px",
       },
       colors: {
-        "red": '#EE403D',
-        "blue": '#25435D',
-        "white": '#FFFFFF',
+        "red": "#EE403D",
+        "blue": "#25435D",
+        "white": "#FFFFFF",
       },
       fontFamily: {
         display: "Open Sans, sans-serif",

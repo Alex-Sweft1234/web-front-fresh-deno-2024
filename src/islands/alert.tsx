@@ -8,38 +8,38 @@ export function Alert() {
 
   const { modals: { setAlert } } = useAction()
 
-  const { title = "Информация", message } = alert || {}
+  const { title = "Информация", message, actionText = "Хорошо", closeButton = false } = alert || {}
 
-  const [messageData, setMessageData] = useState<Record<string, string[] | string> | undefined>(undefined)
+  const [content, setContent] = useState<Record<string, string[] | string> | undefined>(undefined)
 
   const onClose = () => {
     setAlert()
   }
 
   useEffect(() => {
-    if (!messageData) setMessageData(message)
-    else setTimeout(() => setMessageData(message), 250)
+    if (!content) setContent(message)
+    else setTimeout(() => setContent(message), 280)
   }, [message])
   
   return(
-    <Modal title={title} isOpen={!!message} onClose={onClose}>
-      <div>
-        {messageData && (
-          typeof messageData === 'object' ? (
-            Object.entries(messageData).map(([_, val], idx) => (
-              <div key={`snackbar-message-${idx}`}>
+    <Modal title={title} isOpen={!!message} closeButton={closeButton} onClose={onClose}>
+      <div className="pt-2 pb-10">
+        {content && (
+          typeof content === 'object' ? (
+            Object.entries(content).map(([_, val], idx) => (
+              <div key={`alert-message-${idx}`}>
                 {Array.isArray(val) && val.map((v, i) => <div key={i}>{str.normalize(v, true)}</div>)}
               </div>
             ))
-          ) : typeof messageData === 'string' ? (
-            <div key="snackbar-message">{str.normalize(messageData as string, true)}</div>
+          ) : typeof content === 'string' ? (
+            <div key="snackbar-message">{str.normalize(content as string, true)}</div>
           ) : (
-            message
+            content
           )
         )}
       </div>
-      <div>
-        <Button></Button>
+      <div className="w-80 mx-auto">
+        <Button onClick={onClose}>{actionText}</Button>
       </div>
     </Modal>
   )
