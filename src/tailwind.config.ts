@@ -18,7 +18,7 @@ export default {
         "white": "#FFFFFF",
       },
       fontFamily: {
-        display: "Open Sans, sans-serif",
+        "primary": ["MontserratAlternates"],
       }
     },
   },

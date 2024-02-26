@@ -1,9 +1,9 @@
 import { PageProps } from "$fresh/server.ts"
-import { HeaderRoot, Footer } from "../layers/widgets/mod.ts"
+import { HeaderRoot, Footer, ModalsRoot } from "../layers/widgets/mod.ts"
 
 export default function Layout({ Component }: PageProps) {
   return (
-    <div className="layout bg-blue text-red">
+    <div className="layout font-primary bg-blue text-white">
       <div className="layout-header">
         <HeaderRoot />
       </div>
@@ -15,6 +15,8 @@ export default function Layout({ Component }: PageProps) {
       <div className="layout-footer">
         <Footer />
       </div>
+      
+      <ModalsRoot />
     </div>
   )
 }
