@@ -1,8 +1,8 @@
 import { ComponentChildren } from "preact"
 import { useLayoutEffect } from "preact/hooks"
 import { TGlobalState } from "../layers/types/mod.ts"
-import { useStore } from "./store.provider.tsx"
-import {Alert} from "./alert.tsx";
+import { useAction } from "./store.provider.tsx"
+import { Alert } from "./alert.tsx"
 
 type TPageContainer = {
   state: TGlobalState
@@ -10,7 +10,7 @@ type TPageContainer = {
 }
 
 export function PageContainer({ children, state }: TPageContainer) {
-  const { constants: { setData: setDataConstants } } = useStore()
+  const { constants: { setData: setDataConstants } } = useAction()
 
   useLayoutEffect(() => setDataConstants(state.constants), [])
 

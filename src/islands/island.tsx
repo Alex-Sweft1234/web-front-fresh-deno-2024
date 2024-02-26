@@ -1,15 +1,21 @@
 import moment from "moment"
-import { useStore } from "./store.provider.tsx"
+import { useEffect } from "preact/hooks"
+import { useAction, useSelector } from "./store.provider.tsx"
 import { Button, NavLink } from "../layers/shared/ui/mod.ts"
 
 export default function Island({ path = '' }) {
-  const { constants: { data, loading: isLoadConstants, setData: uploadConstants } } = useStore()
+  const { constants: { data, loading: isLoadConstants } } = useSelector()
+  const { constants: { setData: uploadConstants }, modals: { setAlert } } = useAction()
 
   const { NOW = 0 } = data || {}
 
   const onCurrentDate = () => {
     uploadConstants()
   }
+
+  useEffect(() => {
+    setAlert({ message: { alert: ['message'] }})
+  }, [])
 
   return (
     <div>
