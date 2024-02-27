@@ -1,3 +1,5 @@
+import { Container } from "../../shared/ui/mod.ts"
+
 export function HomePage() {
-  return <div>home page</div>
+  return <Container>home page</Container>
 }

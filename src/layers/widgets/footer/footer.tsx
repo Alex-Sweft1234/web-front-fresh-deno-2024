@@ -1,5 +1,5 @@
 export function Footer() {
   return (
-    <footer>footer</footer>
+    <footer className="h-[190px]">footer</footer>
   )
 }
