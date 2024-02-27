@@ -1,9 +1,16 @@
-export type TAlert = {
-  title?: string
-  actionText?: string
-  closeButton?: boolean
-  message: Record<string, string[] | string>
-}
+export type TAlert = Partial<{
+  title: string
+  actionText: string
+  cancelText: string
+  confirmText: string
+  onClose: () => void
+  closeButton: boolean
+  onAction: () => void
+  onCancel: () => void
+  onConfirm: () => void
+  emptyMessage: boolean
+  message: Record<string, string[] | string> | string
+}>
 
 export type TModal = {
   message: any

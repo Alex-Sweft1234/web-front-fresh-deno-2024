@@ -37,7 +37,7 @@ export function Modal({
     setTimeout(() =>{
       if (isOpen) onOpenModal()
       else onCloseModal()
-    }, 200)
+    }, 100)
   }
   
   useEffect(() => onOpen(), [isOpen])
