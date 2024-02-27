@@ -4,14 +4,14 @@ import { useSignal } from "@preact/signals"
 import { IGlobalContext, TAlert, TConstants, TSuccessResponse } from "../layers/types/mod.ts"
 import { getConstants } from "../layers/shared/api/mod.ts"
 
-export const AppStore = createContext<IGlobalContext>({
-  constants: { data: null, loading: false, setData: () => {} },
-  modals: { data: { modal: null, alert: null }, setAlert: () => {}, },
-})
-
 type TStoreProvider = {
   children: ComponentChildren
 }
+
+export const AppStore = createContext<IGlobalContext>({
+  constants: { data: null, loading: false, setData: () => {} },
+  modals: { data: { modal: null, alert: null }, setAlert: () => {} },
+})
 
 export function StoreProvider({ children }: TStoreProvider) {
   const constants = useSignal<string | null>(null)
