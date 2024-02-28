@@ -1,13 +1,11 @@
 import { ComponentChildren } from "preact"
 
 type TContainer = {
-  px?: number
-  maxWidth?: number
   children: ComponentChildren;
 }
 
-export function Container({ children, maxWidth = 1300, px = 15 }: TContainer) {
+export function Container({ children }: TContainer) {
   return (
-    <div className={`max-w-[${maxWidth}px] mx-auto px-[${px}px]`}>{children}</div>
+    <div className={`max-w-[1300px] mx-auto px-[15px] md:px-[20px]`}>{children}</div>
   )
 }

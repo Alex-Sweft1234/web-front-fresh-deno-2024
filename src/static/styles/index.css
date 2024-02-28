@@ -9,6 +9,7 @@
         display: flex;
         min-height: 100vh;
         flex-direction: column;
+        --animate-duration: 0.5s;
     }
 
     .layout-header {
