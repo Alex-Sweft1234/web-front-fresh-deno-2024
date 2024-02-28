@@ -1,4 +1,5 @@
 import { Head } from "$fresh/runtime.ts"
+import {Container} from "../layers/shared/ui/container/container.tsx";
 
 export default function Error404() {
   return (
@@ -6,10 +7,14 @@ export default function Error404() {
       <Head>
         <title>404 - Page not found</title>
       </Head>
-      <div>
-        <h1 className="text-4xl font-bold">404 - Page not found</h1>
-        <a href="/" className="underline">Go back home</a>
-      </div>
+      <Container className="h-[calc(100vh-310px)]">
+        <div className="flex flex-col items-center justify-center h-full">
+          <h1 className="text-center text-4xl font-bold">Страница не найдена</h1>
+          <div className="flex justify-center mt-10">
+            <a href="/" className="underline text-lg">На главную</a>
+          </div>
+        </div>
+      </Container>
     </>
   )
 }

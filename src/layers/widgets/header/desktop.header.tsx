@@ -1,17 +1,22 @@
-import { Button, Container, NavLink } from "../../shared/ui/mod.ts"
+import { Button, Container, Image, NavLink } from "../../shared/ui/mod.ts"
+import { img } from "../../assets/mod.ts"
 
 export function DesktopHeader() {
   return (
-    <div className="h-[100%]">
-      <Container className="h-[100%]">
-        <div className="h-[100%] flex justify-between items-center">
-          <div>logo</div>
-          <div className="h-[100%] flex justify-center items-center">
-            <div>
-              <NavLink href="/">Главная</NavLink>
-            </div>
-            <div>
-              <Button>Войти</Button>
+    <div className="h-full">
+      <Container className="h-full">
+        <div className="flex-nowrap grid grid-cols-12 gap-4 h-full">
+          <div className="col-start-1 col-end-3 flex items-center">
+            <Image src={img.logo} alt="logo" />
+          </div>
+          <div className="col-start-6 col-end-13">
+            <div className="flex flex-nowrap justify-between items-center gap-4 h-[100%]">
+              <div>
+                <NavLink href="/">Главная</NavLink>
+              </div>
+              <div>
+                <Button>Войти</Button>
+              </div>
             </div>
           </div>
         </div>
