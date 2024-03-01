@@ -1,1 +1,1 @@
-export * from './palette.ts'
+export * from "./palette.ts"

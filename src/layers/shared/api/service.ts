@@ -1,4 +1,4 @@
-import { TFetchConfig } from './../../types/mod.ts'
+import { TFetchConfig } from "./../../types/mod.ts"
 
 const apiFetchURL = 'https://dobrycola-promo.ru/backend'
 

@@ -1,5 +1,5 @@
 import { JSX } from "preact"
-import {TColors} from "../../../types/main.ts";
+import { TColors } from "../../../types/main.ts"
 
 interface ILinkButton {
   color?: TColors

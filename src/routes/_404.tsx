@@ -1,5 +1,5 @@
 import { Head } from "$fresh/runtime.ts"
-import {Container} from "../layers/shared/ui/container/container.tsx";
+import { Container } from "../layers/shared/ui/mod.ts"
 
 export default function Error404() {
   return (

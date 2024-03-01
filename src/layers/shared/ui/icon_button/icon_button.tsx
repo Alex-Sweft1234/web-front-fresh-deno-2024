@@ -1,6 +1,6 @@
 import { JSX } from "preact"
 import { IS_BROWSER } from "$fresh/src/runtime/utils.ts"
-import {TColors} from "../../../types/main.ts";
+
 interface IIconButton {
   ripple?: "light" | "dark"
 }
