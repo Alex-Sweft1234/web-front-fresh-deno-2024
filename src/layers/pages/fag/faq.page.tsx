@@ -8,8 +8,10 @@ interface IFaqPage {
 
 export function FaqPage({ data = [] }: IFaqPage) {
   return (
-    <Container maxWidth={1000}>
-      <Faq data={data} />
-    </Container>
+    <div className="bg-primary">
+      <Container maxWidth={1000}>
+        <Faq data={data} />
+      </Container>
+    </div>
   )
 }
