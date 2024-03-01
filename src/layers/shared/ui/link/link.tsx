@@ -1,12 +1,10 @@
 import { JSX } from "preact"
 
-export function Link({ href, children }: JSX.HTMLAttributes<HTMLLinkElement>) {
+export function Link({ className, ...props }: JSX.HTMLAttributes<HTMLAnchorElement>) {
   return (
     <a
-      href={href}
-      className="bg-transparent px-3 py-2 rounded-md text-[18px] font-medium text-primary hover:text-tertiary"
-    >
-      {children}
-    </a>
+      {...props}
+      className={`bg-transparent px-3 py-2 rounded-md text-[18px] font-medium text-primary hover:text-tertiary ${className ?? ""}`}
+    />
   )
 }

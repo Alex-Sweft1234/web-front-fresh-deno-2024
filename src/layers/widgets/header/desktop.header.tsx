@@ -1,4 +1,4 @@
-import { Button, Container, Image, NavLink } from "../../shared/ui/mod.ts"
+import { Container, Image, LinkButton, NavLink} from "../../shared/ui/mod.ts"
 import { img } from "../../assets/mod.ts"
 import { TMenu } from "../../types/mod.ts"
 
@@ -23,7 +23,7 @@ export function DesktopHeader({ items }: IDesktopHeader) {
               ))}
 
               <div>
-                <Button color="secondary" bgColor="primary">Войти</Button>
+                <LinkButton href="?signin" color="secondary" bgColor="primary">Войти</LinkButton>
               </div>
             </div>
           </div>

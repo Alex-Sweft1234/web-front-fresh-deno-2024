@@ -10,6 +10,7 @@ interface IButton {
 
 export function Button({
   disabled,
+  className,
   ripple = "dark",
   color = "secondary",
   bgColor = "primary",
@@ -24,7 +25,7 @@ export function Button({
       disabled={disabled || !IS_BROWSER}
       data-ripple-dark={`${ripple === "dark"}`}
       data-ripple-light={`${ripple === "light"}`}
-      class={`align-middle w-full select-none font-bold text-center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none xs:text-sm md:text-lg py-3.5 px-10 ${bg} ${text} hover:opacity-[0.85] focus:opacity-[0.85] active:opacity-[0.85] rounded-full`}
+      className={`align-middle w-full select-none font-bold text-center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none xs:text-sm md:text-lg py-3.5 px-10 ${bg} ${text} hover:opacity-[0.85] focus:opacity-[0.85] active:opacity-[0.85] rounded-full ${className ?? ""}`}
     />
   )
 }
