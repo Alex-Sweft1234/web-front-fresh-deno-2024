@@ -21,7 +21,7 @@ export default function Island({ path = '' }) {
     <div>
       <div>path page: <strong>{path}</strong></div>
       <div>date now: <strong>{moment(NOW).format('DD MMMM YYYY HH:mm:SS')}</strong></div>
-      <div className="mt-2">
+      <div className="mt-2 max-w-[300px]">
         <Button onClick={onCurrentDate} disabled={isLoadConstants}>Обновить дату</Button>
         <NavLink href="/profile">приветствие</NavLink>
       </div>
