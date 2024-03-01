@@ -11,6 +11,9 @@ export interface TGlobalState {
 }
 
 export type TPalette = {
-  primary: string
-  secondary: string
+  primary: "primary"
+  secondary: "secondary"
+  tertiary: "tertiary"
 }
+
+export type TColors = "primary" | "secondary" | "tertiary"

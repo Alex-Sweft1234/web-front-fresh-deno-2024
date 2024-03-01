@@ -1,7 +1,12 @@
 import { Button, Container, Image, NavLink } from "../../shared/ui/mod.ts"
 import { img } from "../../assets/mod.ts"
+import { TMenu } from "../../types/mod.ts"
 
-export function DesktopHeader() {
+interface IDesktopHeader {
+  items: TMenu[]
+}
+
+export function DesktopHeader({ items }: IDesktopHeader) {
   return (
     <div className="h-full">
       <Container className="h-full">
@@ -11,11 +16,14 @@ export function DesktopHeader() {
           </div>
           <div className="col-start-6 col-end-13">
             <div className="flex flex-nowrap justify-between items-center gap-4 h-[100%]">
+              {items.map((k: TMenu, i: number) => (
+                <div key={`menu-${i}`}>
+                  <NavLink href={k.path}>{k?.link}</NavLink>
+                </div>
+              ))}
+
               <div>
-                <NavLink href="/">Главная</NavLink>
-              </div>
-              <div>
-                <Button>Войти</Button>
+                <Button color="secondary" bgColor="primary">Войти</Button>
               </div>
             </div>
           </div>

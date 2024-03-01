@@ -62,8 +62,8 @@ export function Modal({
           </div>
         )}
 
-        <div className="text-center font-bold uppercase p-4 text-blue text-3xl font-bold">{title}</div>
-        <div className="text-center py-4 text-blue text-md font-regular">{children}</div>
+        <div className="text-center font-bold uppercase p-4 text-secondary text-3xl font-bold">{title}</div>
+        <div className="text-center py-4 text-secondary text-md font-regular">{children}</div>
       </div>
     </div>
   )

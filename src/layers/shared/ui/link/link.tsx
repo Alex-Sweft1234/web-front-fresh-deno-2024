@@ -6,7 +6,7 @@ export function Link({ href, children, disabled }: JSX.HTMLAttributes<HTMLLinkEl
     <a
       href={href}
       disabled={IS_BROWSER || disabled}
-      className="bg-transparent px-3 py-2 rounded-md text-[18px] font-medium text-white hover:text-red"
+      className="bg-transparent px-3 py-2 rounded-md text-[18px] font-medium text-primary hover:text-tertiary"
     >
       {children}
     </a>

@@ -3,7 +3,7 @@ import { HeaderRoot, Footer, ModalsRoot } from "../layers/widgets/mod.ts"
 
 export default function Layout({ Component }: PageProps) {
   return (
-    <div className="layout font-primary bg-blue text-white animate__animated animate__fadeIn">
+    <div className="layout font-primary bg-secondary text-primary animate__animated animate__fadeIn">
       <div className="layout-header">
         <HeaderRoot />
       </div>

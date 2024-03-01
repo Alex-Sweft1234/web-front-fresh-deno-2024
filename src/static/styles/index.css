@@ -46,6 +46,11 @@ a {
     -webkit-tap-highlight-color: transparent!important;
 }
 
+button {
+    transition: all 0.2s ease-out!important;
+    -webkit-tap-highlight-color: transparent!important;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;

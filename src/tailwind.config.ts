@@ -13,9 +13,9 @@ export default {
         xl: "1920px",
       },
       colors: {
-        "red": "#EE403D",
-        "blue": "#25435D",
-        "white": "#FFFFFF",
+        "primary": "#FFFFFF",
+        "secondary": "#25435D",
+        "tertiary": "#EE403D",
       },
       fontFamily: {
         "primary": ["MontserratAlternates"],

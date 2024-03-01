@@ -53,15 +53,15 @@ export function Alert() {
       {onConfirm ? (
         <div className="w-80 mx-auto">
           <div>
-            <Button onClick={onCancel}>{cancelText}</Button>
+            <Button color="primary" bgColor="secondary" onClick={onCancel}>{cancelText}</Button>
           </div>
           <div>
-            <Button onClick={onConfirm}>{confirmText}</Button>
+            <Button color="primary" bgColor="secondary" onClick={onConfirm}>{confirmText}</Button>
           </div>
         </div>
       ) : (
         <div className="w-80 mx-auto">
-          <Button onClick={onClose}>{actionText}</Button>
+          <Button color="primary" bgColor="secondary" onClick={onClose}>{actionText}</Button>
         </div>
       )}
     </Modal>

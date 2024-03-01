@@ -24,7 +24,7 @@ export default function App({ Component }: PageProps) {
 
         <title>{metaData.title}</title>
       </head>
-      <body className="bg-blue">
+      <body className="bg-secondary">
         <StoreProvider>
           <Component/>
         </StoreProvider>
