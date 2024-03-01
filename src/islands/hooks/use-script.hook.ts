@@ -1,10 +1,10 @@
 import { useState, useEffect } from "preact/hooks"
 
-export const useScript = (scriptToAppend: string): { appendScriptStatus: boolean } => {
+export function useScript(scriptToAppend: string) {
   const [appendScriptStatus, setAppendScriptStatus] = useState<boolean>(false)
 
   useEffect(() => {
-    const script = document.createElement('script')
+    const script = document.createElement("script")
 
     script.src = scriptToAppend
     script.async = true
