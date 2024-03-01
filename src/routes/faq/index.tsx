@@ -2,7 +2,7 @@ import { FreshContext, Handlers, PageProps } from "$fresh/src/server/types.ts"
 import { FaqPage } from "../../layers/pages/mod.ts"
 import { getConstants, getFaq } from "../../layers/shared/api/mod.ts"
 import { PageContainer } from "../../islands/page_container/page.container.tsx"
-import { TConstants, TGlobalState, TSuccessResponse } from "../../layers/types/mod.ts"
+import { TConstants, TFaq, TGlobalState, TSuccessResponse } from "../../layers/types/mod.ts"
 
 export const handler: Handlers = {
   async GET(_req: Request, ctx: FreshContext<any>) {
@@ -14,8 +14,8 @@ export const handler: Handlers = {
       return Response.redirect(`${ctx.url.origin}/start`, 302)
     }
     
-    await getFaq().then(({ data }: TSuccessResponse<any>) => {
-      ctx.state.faq = data
+    await getFaq().then(({ data }: TSuccessResponse<{ faq: TFaq[] }>) => {
+      ctx.state.faq = data.faq
     })
     
     return ctx.render()

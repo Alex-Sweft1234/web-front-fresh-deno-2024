@@ -12,6 +12,7 @@ import * as $profile_index from "./routes/profile/index.tsx"
 import * as $start_layout from "./routes/start/_layout.tsx"
 import * as $start_index from "./routes/start/index.tsx"
 import * as $alert_alert from "./islands/alert/alert.tsx"
+import * as $faq_faq from "./islands/faq/faq.tsx"
 import * as $hooks_use_image_preload_hook from "./islands/hooks/use-image-preload.hook.ts"
 import * as $hooks_use_script_hook from "./islands/hooks/use-script.hook.ts"
 import * as $page_container_page_container from "./islands/page_container/page.container.tsx"
@@ -33,6 +34,7 @@ const manifest = {
 	},
 	islands: {
 		"./islands/alert/alert.tsx": $alert_alert,
+		"./islands/faq/faq.tsx": $faq_faq,
 		"./islands/hooks/use-image-preload.hook.ts": $hooks_use_image_preload_hook,
 		"./islands/hooks/use-script.hook.ts": $hooks_use_script_hook,
 		"./islands/page_container/page.container.tsx": $page_container_page_container,

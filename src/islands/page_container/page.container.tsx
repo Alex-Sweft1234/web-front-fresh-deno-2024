@@ -13,9 +13,5 @@ export function PageContainer({ children, state }: TPageContainer) {
 
   useLayoutEffect(() => setDataConstants(state.constants), [])
 
-  return (
-    <>
-      {children}
-    </>
-  )
+  return <>{children}</>
 }

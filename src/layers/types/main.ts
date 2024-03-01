@@ -1,5 +1,6 @@
 import { TConstants, TContextConstants } from "./constants.ts"
 import { TContextModals } from "./modal.ts"
+import { TFaq } from "./faq.ts"
 
 export interface IGlobalContext {
   constants: TContextConstants
@@ -8,7 +9,7 @@ export interface IGlobalContext {
 
 export interface TGlobalState {
   constants: TConstants
-  faq?: any
+  faq?: TFaq[]
 }
 
 export type TPalette = {
