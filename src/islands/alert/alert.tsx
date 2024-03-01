@@ -1,7 +1,7 @@
 import { useEffect, useState } from "preact/hooks"
-import { Button, Modal } from "../layers/shared/ui/mod.ts"
-import { useAction, useSelector } from "./store.provider.tsx"
-import { str } from "../layers/shared/lib/mod.ts"
+import { Button, Modal } from "../../layers/shared/ui/mod.ts"
+import { useAction, useSelector } from "../store/store.provider.tsx"
+import { str } from "../../layers/shared/lib/mod.ts"
 
 export function Alert() {
   const { modals: { setAlert } } = useAction()

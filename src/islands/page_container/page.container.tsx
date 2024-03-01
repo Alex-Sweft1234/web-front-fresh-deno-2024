@@ -1,7 +1,7 @@
 import { ComponentChildren } from "preact"
 import { useLayoutEffect } from "preact/hooks"
-import { TGlobalState } from "../layers/types/mod.ts"
-import { useAction } from "./store.provider.tsx"
+import { TGlobalState } from "../../layers/types/mod.ts"
+import { useAction } from "../store/store.provider.tsx"
 
 type TPageContainer = {
   state: TGlobalState

@@ -1,4 +1,4 @@
-import { Alert } from "../../../islands/alert.tsx"
+import { Alert } from "../../../islands/alert/alert.tsx"
 
 export function ModalsRoot() {
   return (

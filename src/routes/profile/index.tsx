@@ -1,7 +1,7 @@
 import { FreshContext, Handlers, PageProps } from "$fresh/src/server/types.ts"
 import { ProfilePage } from "../../layers/pages/mod.ts"
 import { getConstants } from "../../layers/shared/api/mod.ts"
-import { PageContainer } from "../../islands/page.container.tsx"
+import { PageContainer } from "../../islands/page_container/page.container.tsx"
 import { TConstants, TGlobalState, TSuccessResponse } from "../../layers/types/mod.ts"
 
 export const handler: Handlers = {

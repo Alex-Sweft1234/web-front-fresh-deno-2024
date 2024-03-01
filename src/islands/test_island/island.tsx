@@ -1,7 +1,7 @@
 import moment from "moment"
 import { useEffect } from "preact/hooks"
-import { useAction, useSelector } from "./store.provider.tsx"
-import { Button, NavLink } from "../layers/shared/ui/mod.ts"
+import { useAction, useSelector } from "../store/store.provider.tsx"
+import { Button, NavLink } from "../../layers/shared/ui/mod.ts"
 
 export default function Island({ path = '' }) {
   const { constants: { data, loading: isLoadConstants } } = useSelector()

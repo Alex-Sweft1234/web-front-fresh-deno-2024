@@ -1,6 +1,6 @@
 import { PageProps } from "$fresh/server.ts"
 import { metaData } from "../layers/shared/config/mod.ts"
-import { StoreProvider } from "../islands/store.provider.tsx"
+import { StoreProvider } from "../islands/store/store.provider.tsx"
 
 export default function App({ Component }: PageProps) {
   return (

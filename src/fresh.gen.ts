@@ -10,10 +10,12 @@ import * as $index from "./routes/index.tsx"
 import * as $profile_index from "./routes/profile/index.tsx"
 import * as $start_layout from "./routes/start/_layout.tsx"
 import * as $start_index from "./routes/start/index.tsx"
-import * as $alert from "./islands/alert.tsx"
-import * as $island from "./islands/island.tsx"
-import * as $page_container from "./islands/page.container.tsx"
-import * as $store_provider from "./islands/store.provider.tsx"
+import * as $alert_alert from "./islands/alert/alert.tsx"
+import * as $hooks_use_image_preload_hook from "./islands/hooks/use-image-preload.hook.ts"
+import * as $hooks_use_script_hook from "./islands/hooks/use-script.hook.ts"
+import * as $page_container_page_container from "./islands/page_container/page.container.tsx"
+import * as $store_store_provider from "./islands/store/store.provider.tsx"
+import * as $test_island_island from "./islands/test_island/island.tsx"
 import { type Manifest } from "$fresh/server.ts"
 
 const manifest = {
@@ -28,10 +30,12 @@ const manifest = {
 		"./routes/start/index.tsx": $start_index,
 	},
 	islands: {
-		"./islands/alert.tsx": $alert,
-		"./islands/island.tsx": $island,
-		"./islands/page.container.tsx": $page_container,
-		"./islands/store.provider.tsx": $store_provider,
+		"./islands/alert/alert.tsx": $alert_alert,
+		"./islands/hooks/use-image-preload.hook.ts": $hooks_use_image_preload_hook,
+		"./islands/hooks/use-script.hook.ts": $hooks_use_script_hook,
+		"./islands/page_container/page.container.tsx": $page_container_page_container,
+		"./islands/store/store.provider.tsx": $store_store_provider,
+		"./islands/test_island/island.tsx": $test_island_island,
 	},
 	baseUrl: import.meta.url,
 } satisfies Manifest
