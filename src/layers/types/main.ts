@@ -8,6 +8,7 @@ export interface IGlobalContext {
 
 export interface TGlobalState {
   constants: TConstants
+  faq?: any
 }
 
 export type TPalette = {

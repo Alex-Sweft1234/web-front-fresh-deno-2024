@@ -1,4 +1,5 @@
 export * from "./ui.ts"
+export * from "./faq.ts"
 export * from "./libs.ts"
 export * from "./main.ts"
 export * from "./modal.ts"
