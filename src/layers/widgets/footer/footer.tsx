@@ -24,8 +24,13 @@ export function Footer() {
 					</div>
 					<div>
 						Пишите нам на:
-						<br/>
-						<Link href={`mailto:${EMAIL}`} target="_blank" rel="noopener noreferrer" className="underline font-bold text-[20px]">
+						<br />
+						<Link
+							target="_blank"
+							href={`mailto:${EMAIL}`}
+							rel="noopener noreferrer"
+							className="underline font-bold text-[20px]"
+						>
 							{EMAIL}
 						</Link>
 					</div>
