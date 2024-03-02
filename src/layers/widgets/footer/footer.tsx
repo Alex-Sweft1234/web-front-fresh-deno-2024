@@ -8,7 +8,7 @@ export function Footer() {
 			<Container className="h-full py-8 flex items-end">
 				<div className="w-full flex justify-between items-end">
 					<div className="max-w-[550px] w-full text-[13px]">
-						<div className="mb-2">© 2024 Teboil</div>
+						<div className="mb-1">© 2024 Teboil</div>
 						<div className="flex flex-nowrap justify-between gap-4">
 							<div>
 								<Link href="/" target="_blank" rel="noopener noreferrer" className="underline font-medium text-[16px]">
