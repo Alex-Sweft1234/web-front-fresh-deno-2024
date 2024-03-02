@@ -3,29 +3,31 @@ import { IS_BROWSER } from "$fresh/runtime.ts"
 import { TColors } from "../../../types/mod.ts"
 
 interface IButton {
-  color?: TColors
-  bgColor?: TColors
-  ripple?: "light" | "dark"
+	color?: TColors
+	bgColor?: TColors
+	ripple?: "light" | "dark"
 }
 
 export function Button({
-  disabled,
-  className,
-  ripple = "dark",
-  color = "secondary",
-  bgColor = "primary",
-  ...props
+	disabled,
+	className,
+	ripple = "dark",
+	color = "secondary",
+	bgColor = "primary",
+	...props
 }: JSX.HTMLAttributes<HTMLButtonElement> & IButton) {
-  const text = color === "primary" ? "text-primary" : color === "secondary" ? "text-secondary" : "text-tertiary"
-  const bg = bgColor === "primary" ? "bg-primary" : bgColor === "secondary" ? "bg-secondary" : "bg-tertiary"
+	const text = color === "primary" ? "text-primary" : color === "secondary" ? "text-secondary" : "text-tertiary"
+	const bg = bgColor === "primary" ? "bg-primary" : bgColor === "secondary" ? "bg-secondary" : "bg-tertiary"
 
-  return (
-    <button
-      {...props}
-      disabled={disabled || !IS_BROWSER}
-      data-ripple-dark={`${ripple === "dark"}`}
-      data-ripple-light={`${ripple === "light"}`}
-      className={`align-middle w-full select-none font-bold text-center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none xs:text-sm md:text-lg py-3.5 px-10 ${bg} ${text} hover:opacity-[0.85] focus:opacity-[0.85] active:opacity-[0.85] rounded-full ${className ?? ""}`}
-    />
-  )
+	return (
+		<button
+			{...props}
+			disabled={disabled || !IS_BROWSER}
+			data-ripple-dark={`${ripple === "dark"}`}
+			data-ripple-light={`${ripple === "light"}`}
+			className={`align-middle w-full select-none font-bold text-center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none xs:text-sm md:text-lg py-3.5 px-10 ${bg} ${text} hover:opacity-[0.85] focus:opacity-[0.85] active:opacity-[0.85] rounded-full ${
+				className ?? ""
+			}`}
+		/>
+	)
 }

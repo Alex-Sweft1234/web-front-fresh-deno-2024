@@ -38,6 +38,6 @@
 		"hook-form": "https://deno.land/x/netzo@0.4.56/deps/react-hook-form.ts",
 		"html-parser": "https://deno.land/x/deno_dom@v0.1.45/deno-dom-wasm.ts"
 	},
-	"compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
+	"compilerOptions": { "strict": true, "jsx": "react-jsx", "jsxImportSource": "preact" },
 	"nodeModulesDir": true
 }

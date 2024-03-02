@@ -1,3 +1,3 @@
 export function StartPage() {
-  return <></>
+	return <></>
 }
