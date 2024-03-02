@@ -21,7 +21,7 @@ export const handler: Handlers = {
 export default function Profile({ state }: PageProps<unknown, TGlobalState>) {
 	return (
 		<PageContainer state={state}>
-			<ProfilePage />
+			<ProfilePage state={state} />
 		</PageContainer>
 	)
 }
