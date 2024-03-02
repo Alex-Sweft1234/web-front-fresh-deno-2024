@@ -12,3 +12,9 @@ export const getFaq = () =>
 		url: EMethodPath.FAQ,
 		method: "GET",
 	})
+
+export const getFeedbackTheme = async () =>
+	await apiFetch({
+		url: EMethodPath.FEEDBACK_THEME,
+		method: "GET",
+	})

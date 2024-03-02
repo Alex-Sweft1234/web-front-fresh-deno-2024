@@ -7,6 +7,7 @@ import * as $_app from "./routes/_app.tsx"
 import * as $_layout from "./routes/_layout.tsx"
 import * as $api_constants from "./routes/api/constants.ts"
 import * as $faq_index from "./routes/faq/index.tsx"
+import * as $feedback_index from "./routes/feedback/index.tsx"
 import * as $index from "./routes/index.tsx"
 import * as $profile_index from "./routes/profile/index.tsx"
 import * as $start_layout from "./routes/start/_layout.tsx"
@@ -27,6 +28,7 @@ const manifest = {
 		"./routes/_layout.tsx": $_layout,
 		"./routes/api/constants.ts": $api_constants,
 		"./routes/faq/index.tsx": $faq_index,
+		"./routes/feedback/index.tsx": $feedback_index,
 		"./routes/index.tsx": $index,
 		"./routes/profile/index.tsx": $profile_index,
 		"./routes/start/_layout.tsx": $start_layout,

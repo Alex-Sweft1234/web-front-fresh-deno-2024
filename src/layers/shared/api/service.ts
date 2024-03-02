@@ -1,6 +1,6 @@
 import { TFetchConfig } from "./../../types/mod.ts"
 
-const apiFetchURL = "https://dobrycola-promo.ru/backend"
+const apiFetchURL = "https://dobrycola-ng-2023.xtest.atoms.ru/backend"
 
 const defaultHeaders = {
 	Accept: "application/json",

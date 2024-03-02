@@ -12,4 +12,5 @@ export type TFetchConfig = {
 export enum EMethodPath {
 	CONST = "/const",
 	FAQ = "/faq",
+	FEEDBACK_THEME = "/feedback/theme",
 }
